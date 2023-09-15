@@ -16,10 +16,9 @@ def quick_sort(list_sort = list_to_sort) -> list:
             else:
                 if counter != item_pos:
                     list_sort[counter], list_sort[item_pos] = list_sort[item_pos], list_sort[counter]
-                
                 counter += 1
             item_pos += 1
-        print(pivot_value)
+
     return quick_sort(list_sort[:counter]) + quick_sort(list_sort[counter:])
         
 
