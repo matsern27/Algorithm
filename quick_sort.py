@@ -3,7 +3,7 @@ from numpy import mean
 list_to_sort = [9,8,3,17,2,1,6,20,25,30,70,15,90,5]
 
 
-def quick_sort(list_sort = list_to_sort) -> list:
+def quick_sort(list_sort ) -> list:
     if len(list_sort) < 2:
         return list_sort
     else:
@@ -22,5 +22,5 @@ def quick_sort(list_sort = list_to_sort) -> list:
     return quick_sort(list_sort[:counter]) + quick_sort(list_sort[counter:])
         
 
-print(quick_sort())
+print(quick_sort(list_to_sort))
 
